@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tell Sylver Tech about the service you need and the project you have in mind.">
+    <title>Start a project | Sylver Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Sylver Tech home">
+                <span class="brand-mark" aria-hidden="true">S</span>
+                <span>Sylver<span class="brand-light">Tech</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#process">Our process</a>
+                <a class="nav-cta" href="#request-form">Start a project <span aria-hidden="true">↘</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="request-intro">
+            <div class="container request-intro-content">
+                <p class="eyebrow"><span class="status-dot"></span> YOUR IDEA, OUR NEXT CONVERSATION</p>
+                <h1>Let’s talk about<br><span>what you need.</span></h1>
+                <p>Choose a service and tell us a little about your project. The more we know, the better we can understand how to help.</p>
+            </div>
+        </section>
+
+        <section class="request-section" id="request-form">
+            <div class="container request-layout">
+                <div class="request-aside">
+                    <p class="eyebrow eyebrow-dark">A GOOD PLACE TO START</p>
+                    <h2>Tell us the<br>important bits.</h2>
+                    <p>Share your contact details, pick the service you’re interested in, and describe what you have in mind. It’s okay if your idea is still taking shape.</p>
+                    <div class="request-note">
+                        <span aria-hidden="true">✳</span>
+                        <p>Your request is sent through Formspree. You can review submissions in your Formspree account and enable email notifications in that form’s settings. You can also <a href="mailto:ifeanyivalentine0095@gmail.com">email us</a> or <a href="https://wa.me/2349160923559" target="_blank" rel="noopener noreferrer">message us on WhatsApp</a>.</p>
+                    </div>
+                </div>
+
+                <form class="request-form" id="project-request-form" action="https://formspree.io/f/xvkzyywj" method="POST">
+                    <input type="hidden" name="_subject" value="New Sylver Tech project request">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="visitor-name">Your name <span aria-hidden="true">*</span></label>
+                            <input id="visitor-name" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Johnson" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="visitor-email">Email address <span aria-hidden="true">*</span></label>
+                            <input id="visitor-email" name="_replyto" type="email" autocomplete="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="visitor-whatsapp">WhatsApp number <span aria-hidden="true">*</span></label>
+                        <input id="visitor-whatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="Include your country code, e.g. +234..." aria-describedby="whatsapp-hint" required>
+                        <span class="form-hint" id="whatsapp-hint">Required so we can contact you about this request on WhatsApp. Include your country code.</span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="business-name">Business or organization <span class="optional-label">(optional)</span></label>
+                        <input id="business-name" name="business" type="text" autocomplete="organization" placeholder="Your business name">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="service">Which service are you interested in? <span aria-hidden="true">*</span></label>
+                        <select id="service" name="service" required>
+                            <option value="" selected disabled>Choose a service</option>
+                            <option value="web-design">Web &amp; digital design</option>
+                            <option value="data-analytics">Data &amp; analytics</option>
+                            <option value="brand-graphics">Brand &amp; graphics</option>
+                            <option value="mobile-app-development">Mobile app development</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                            <option value="technology">Technology solutions</option>
+                            <option value="not-sure">I’m not sure yet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="project-details">Tell us a little about your project <span aria-hidden="true">*</span></label>
+                        <textarea id="project-details" name="project-details" rows="5" placeholder="What are you hoping to create or improve?" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="timeline">When are you hoping to get started? <span class="optional-label">(optional)</span></label>
+                        <select id="timeline" name="timeline">
+                            <option value="" selected>Choose a timeframe</option>
+                            <option value="soon">As soon as possible</option>
+                            <option value="month">Within the next month</option>
+                            <option value="few-months">In a few months</option>
+                            <option value="exploring">I’m just exploring</option>
+                        </select>
+                    </div>
+
+                    <button class="button form-submit" type="submit" aria-describedby="form-status">Send project request <span aria-hidden="true">↗</span></button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite">Your request will be sent securely through Formspree.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand footer-brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">S</span>
+                <span>Sylver<span class="brand-light">Tech</span></span>
+            </a>
+            <p>Curious by nature. Creative by design.</p>
+            <span>© 2026 Sylver Tech</span>
+        </div>
+    </footer>
+    <script src="request.js" defer></script>
+</body>
+</html>
